@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        ScrollView{
         VStack {
             countDownView()
             HStack{
@@ -26,10 +27,10 @@ struct ContentView: View {
                 Text("Reading")
             }
             .frame(width: 300, height:300)
-//            .overlay(
-//                RoundedRectangle(cornerRadius: 500)
-//                    .stroke(Color.white, lineWidth: 3)
-//            )
+            //            .overlay(
+            //                RoundedRectangle(cornerRadius: 500)
+            //                    .stroke(Color.white, lineWidth: 3)
+            //            )
             .border(Color.black)
             .padding(50)
             HStack{
@@ -49,7 +50,7 @@ struct ContentView: View {
             
         }
         .padding()
-        
+    }
     }
 }
 
